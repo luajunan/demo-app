@@ -5,7 +5,7 @@ A boiler plate for hosting a FastAPI app with an integrated database
 ## Getting started
 
 ```
-cd app
+cd demo-app
 pip install -r requirements.txt
 ```
 
