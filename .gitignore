@@ -1,3 +1,7 @@
 # Ignore Files
 log.log
 tasks.db
+request.ipynb
+
+# Ignore directories
+**/__pycache__/

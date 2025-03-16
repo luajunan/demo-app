@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 def process_pending_tasks():
     db = SessionLocal()
-    pending_tasks = db.query(Task).filter(Task.status == "pending").all()
+    pending_tasks = db.query(Task).filter(Task.status == "pending").order_by(Task.created_at.asc()).all()
     db.close()
 
     total_tasks = len(pending_tasks)

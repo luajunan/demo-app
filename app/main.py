@@ -36,6 +36,13 @@ def get_task(task_id: int):
         raise HTTPException(status_code=404, detail="Task not found")
     return task_data
 
+@app.get("/metrics")
+def get_metrics():
+    db = SessionLocal()
+    metrics = crud.get_metrics_results(db)
+    db.close()
+    return metrics
+
 @app.on_event("startup")
 def startup_event():
     scheduler.start_scheduler()

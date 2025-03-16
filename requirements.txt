@@ -3,3 +3,5 @@ uvicorn
 sqlalchemy
 pydantic
 apscheduler
+watchdog
+streamlit-autorefresh
