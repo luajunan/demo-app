@@ -2,6 +2,7 @@
 log.log
 tasks.db
 request.ipynb
+*.pyc
 
 # Ignore directories
 **/__pycache__/
